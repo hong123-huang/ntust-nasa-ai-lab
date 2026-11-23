@@ -1,4 +1,45 @@
-# Active Work Item
+# Work Item Log
+
+## WO-M0-002 — Complete M0 governance rules
+
+- **Project:** `NTUST_NASA_AI_LAB`
+- **Objective:** Close governance gaps in the existing M0 documents so later M1–M5 work has clear milestone roles, gates, file ownership rules, and acceptance criteria.
+- **Authority:** STUDENT-MAIN Brain; authorized on 2026-11-23.
+- **Created:** 2026-11-23.
+- **Authorized:** 2026-11-23 — `COMMAND_AUTHORIZED_FOR_STUDENT_DISPATCH`.
+- **Executed:** IN_PROGRESS — preflight complete; authorized edits underway.
+- **Returned:** PENDING — Worker report follows commit, push, and remote verification.
+- **Reviewed:** PENDING — responsible Brain review has not occurred.
+- **Accepted:** PENDING — MAIN Brain / STUDENT-MAIN final acceptance has not occurred; Worker must not self-accept.
+
+### Authorized scope
+
+- Expand `ROADMAP.md` so M0–M5 each state Objective, Input, Deliverables, Responsible Brain, Collaborating Brains, Acceptance Criteria, STOP_IF Conditions, and Next Role / Next Milestone.
+- Clarify Protected User Data versus Authorized Project-owned Files and Work Order controls in `AGENTS.md`.
+- Add this WO-M0-002 execution record without erasing WO-M0-001 history.
+- Review `DECISIONS.md`; add a sequential decision only if a new governance decision is required.
+
+### Execution record
+
+- **Modified files:** `AGENTS.md`, `ROADMAP.md`, `WORK_ITEM.md`, and `DECISIONS.md` (D013 appended).
+- **Decision log:** Existing D001–D012 preserved. Added D013 to formalize Work Order-bounded authority for project-owned files while keeping Protected User Data protected.
+- **Git commit:** Pending.
+- **GitHub push:** Pending.
+- **Remote verification:** Pending.
+- **Unresolved issues:** Pending.
+- **MAIN Brain final acceptance:** PENDING.
+
+### Worker return checklist
+
+- [ ] Roadmap contains all eight required fields for all six milestones.
+- [ ] AGENTS.md distinguishes protected user data from authorized project files and permits authorized Development work.
+- [ ] WO-M0-002 states all six process states without pre-marking acceptance.
+- [ ] Existing decision history is preserved; any new decision is appended with the next sequential ID.
+- [ ] Staged diff contains only authorized governance files.
+- [ ] Commit and push succeeded; remote `main` matches the committed files.
+- [ ] Return status: pending.
+
+## WO-M0-001 — M0 Governance Initialization (previous)
 
 - **WORK_ITEM_ID:** `WO-M0-001`
 - **Title:** M0 Governance Initialization
