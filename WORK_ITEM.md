@@ -3,7 +3,7 @@
 - **WORK_ITEM_ID:** `WO-M0-001`
 - **Title:** M0 Governance Initialization
 - **Responsible:** MAIN Own Worker (Codex)
-- **Status:** BLOCKED — local governance baseline is committed; public GitHub setup and remote verification could not be completed in this environment.
+- **Status:** BLOCKED — local governance baseline is committed and GitHub MCP is connected; the authorized account's target repository is absent and the available MCP tools cannot create a repository.
 - **Project:** `NTUST_NASA_AI_LAB`
 
 ## Scope
@@ -35,6 +35,6 @@ Stop and report `BLOCKED` if the root is unclear, an existing governance file wo
 
 ## Worker return
 
-Worker result: BLOCKED. The four governance files were committed locally on `main` in commit `e50d8611c06ad5190cb90d233d70a436efd4aa8a`. No GitHub CLI is installed, no remote is configured, and browser automation was stopped because the current browser URL could not be determined with sufficient confidence. No remote repository creation, push, or remote-content verification is claimed.
-Blockers: Authenticated GitHub repository creation and remote verification are unavailable.
+Worker result: BLOCKED. The four governance files are committed locally on `main`; the latest local commit is `15a2646a0dcbc3b12d60fabc07d2268248bdf5ac`. GitHub MCP is connected as `hong123-huang`. The target `hong123-huang/ntust-nasa-ai-lab` returned 404 and was not present in the authenticated user's repository listing. Other owners have repositories with the same name; none is authorized for this project. The available GitHub MCP actions do not include repository creation; no GitHub CLI is installed and no Git remote is configured. No remote creation, push, or remote-content verification is claimed.
+Blockers: Create `hong123-huang/ntust-nasa-ai-lab` as a public repository (or provide its verified URL), then push local `main` and verify the four governance files remotely.
 Next action: await MAIN Brain review and acceptance. Worker cannot self-approve M0.
